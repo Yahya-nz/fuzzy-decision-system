@@ -224,7 +224,7 @@ with st.sidebar:
     st.markdown("### Informasi")
     st.markdown("""
         **Dibuat oleh:**  
-        Alivia
+        Livia
         
         **Aplikasi:**  
         Logika Fuzzy 
