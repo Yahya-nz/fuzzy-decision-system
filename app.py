@@ -224,12 +224,10 @@ with st.sidebar:
     st.markdown("### Informasi")
     st.markdown("""
         **Dibuat oleh:**  
-        Safira Aulia Rahma  
-        (461142125)
+        Alivia 
         
         **Aplikasi:**  
-        Logika Fuzzy untuk  
-        Pemilihan Hosting Website
+        Logika Fuzzy 
     """)
 
 # Home Page
@@ -301,20 +299,6 @@ if page == "Home":
     st.markdown("---")
     st.markdown("### Panduan Penggunaan")
     
-    with st.expander("Cara Menggunakan Aplikasi"):
-        st.markdown("""
-        1. **Upload Data**: Upload file Excel atau input data manual
-        2. **Tentukan Kriteria**: Pilih tipe kriteria (Benefit/Cost)
-        3. **Set Bobot**: Tentukan bobot untuk setiap kriteria
-        4. **Hitung**: Klik tombol hitung untuk melihat hasil
-        5. **Bandingkan**: Lihat perbandingan hasil SAW dan WP
-        
-        **Format File Excel:**
-        - Sheet harus bernama 'Metode SAW' atau 'Metode WP'
-        - Kolom pertama: Nama alternatif
-        - Kolom berikutnya: Data kriteria
-        """)
-
 # Perhitungan Page
 elif page == "Perhitungan":
     st.markdown("### Perhitungan SPK")
