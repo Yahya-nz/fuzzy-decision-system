@@ -224,7 +224,7 @@ with st.sidebar:
     st.markdown("### Informasi")
     st.markdown("""
         **Dibuat oleh:**  
-        Alivia 
+        Alivia
         
         **Aplikasi:**  
         Logika Fuzzy 
@@ -295,10 +295,9 @@ if page == "Home":
             st.session_state['num_criteria'] = num_criteria
             st.rerun()
     
-    # Panduan penggunaan
-    st.markdown("---")
-    st.markdown("### Panduan Penggunaan")
     
+
+
 # Perhitungan Page
 elif page == "Perhitungan":
     st.markdown("### Perhitungan SPK")
@@ -377,7 +376,7 @@ elif page == "Perhitungan":
             
             # Display all results
             st.dataframe(
-                results_saw.style.background_gradient(subset=['Total Score'], cmap='Purples'),
+                results_saw,
                 use_container_width=True
             )
             
@@ -446,7 +445,7 @@ elif page == "Perhitungan":
             
             # Display all results
             st.dataframe(
-                results_wp.style.background_gradient(subset=['V Value'], cmap='Purples'),
+                results_wp,
                 use_container_width=True
             )
             
@@ -503,18 +502,14 @@ elif page == "Perbandingan":
         with col1:
             st.markdown("#### Hasil SAW")
             st.dataframe(
-                results_saw[['Alternatif', 'Total Score', 'Rank']].style.background_gradient(
-                    subset=['Total Score'], cmap='Blues'
-                ),
+                results_saw[['Alternatif', 'Total Score', 'Rank']],
                 use_container_width=True
             )
         
         with col2:
             st.markdown("#### Hasil WP")
             st.dataframe(
-                results_wp[['Alternatif', 'V Value', 'Rank']].style.background_gradient(
-                    subset=['V Value'], cmap='Purples'
-                ),
+                results_wp[['Alternatif', 'V Value', 'Rank']],
                 use_container_width=True
             )
         
